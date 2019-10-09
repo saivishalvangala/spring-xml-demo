@@ -5,13 +5,16 @@ public class Actor {
     private String gender;
     private int age;
 
+    public Actor() {
+    }
+
     public Actor(String name, String gender, int age) {
         this.name = name;
         this.gender = gender;
         this.age = age;
     }
 
-    //    public void setName(String name) {
+//    public void setName(String name) {
 //        this.name = name;
 //    }
 //
@@ -22,9 +25,16 @@ public class Actor {
 //    public void setAge(int age) {
 //        this.age = age;
 //    }
-    public void displayInfo(){
-        System.out.println("Name of actor: "+name);
-        System.out.println("gender of actor: "+gender);
-        System.out.println("Age of actor: "+age);
+
+    public String getName() {
+        return name;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public int getAge() {
+        return age;
     }
 }
